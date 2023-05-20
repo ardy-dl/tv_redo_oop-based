@@ -1,9 +1,22 @@
-class Functions:
-    # turn on
+# create the class
+class TV:
+    # initialize the class
+    def __init__(self, name = "Default TV", channel = 98, volume = 4):
+        self.name = name
+        self.channel = channel
+        self.volume = volume
+        self.is_on = False
+    # show the name of the object, channel and volume level
+    def show(self):
+        print (str(self.name) + " - " + "channel:" + str(self.channel) + " volume:" + str(self.volume))
+    # show the status of the object
+    def status(self):
+        print(self.name, "Status: ON" if self.is_on else "Status: OFF")
     def turn_on(self):
         self.is_on = True
         print(self.name, "is turned ON")
-        
+
+
     # turn off
     # get channel
     # set channel
