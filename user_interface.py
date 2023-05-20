@@ -10,3 +10,5 @@ class TV:
     def show(self):
         print (str(self.name) + " - " + "channel:" + str(self.channel) + " volume:" + str(self.volume))
     # show the status of the object
+    def status(self):
+        print(self.name, "Status: ON" if self.is_on else "Status: OFF")
