@@ -8,5 +8,5 @@ class TV:
         self.is_on = False
     # show the name of the object, channel and volume level
     def show(self):
-        print (self.name + " - " + "channel:  " + self.channel + " volume: " + self.volume)
+        print (str(self.name) + " - " + "channel:" + str(self.channel) + " volume:" + str(self.volume))
     # show the status of the object
