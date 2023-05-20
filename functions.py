@@ -1,0 +1,10 @@
+# turn on
+# turn off
+# get channel
+# set channel
+# get volume
+# set volume
+# channel up
+# channel down
+# volume up
+# volume down
