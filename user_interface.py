@@ -4,9 +4,9 @@ class TV:
     def __init__(self, name = "Default TV", channel = 98, volume = 4):
         self.name = name
         self.channel = channel
-        self.channel = volume
+        self.volume = volume
         self.is_on = False
     # show the name of the object, channel and volume level
     def show(self):
-        print(self.name)
+        print (self.name + " - " + "channel:  " + self.channel + " volume: " + self.volume)
     # show the status of the object
