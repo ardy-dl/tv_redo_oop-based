@@ -15,11 +15,16 @@ class TV:
     def turn_on(self):
         self.is_on = True
         print(self.name, "is turned ON")
-
-
-    # turn off
-    # get channel
-    # set channel
+    def turn_off(self):
+        self.is_on = False
+        print(self.name, "is turned OFF")
+    # channel
+    def get_channel(self):
+        print(self.name + " channel: " + str(self.channel))
+    def set_channel(self, new_channel):
+        self.channel = new_channel
+        print("New channel has been set: " + str(new_channel))
+    
     # get volume
     # set volume
     # channel up
