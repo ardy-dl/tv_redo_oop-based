@@ -23,11 +23,22 @@ class TV:
         print(self.name + " channel: " + str(self.channel))
     def set_channel(self, new_channel):
         self.channel = new_channel
-        print("New channel has been set: " + str(new_channel))
-    
-    # get volume
-    # set volume
-    # channel up
-    # channel down
-    # volume up
-    # volume down
+        print("New channel has been set for " + self.name + ":s " + str(new_channel))
+    def channel_up(self):
+        self.channel += 1
+    # decrease channel
+    def channel_down(self):
+        self.channel -= 1
+    # volume
+    def get_volume(self):
+        print(self.name + " volume: " + str(self.volume))
+    def set_volume(self, new_volume):
+        self.volume = new_volume
+        print("New volume has been set for " + self.name + ": " + str(new_volume))
+    # increase volume
+    def volume_up(self):
+        self.volume += 1
+    # decrease volume  
+    def volume_down(self):
+        self.volume -= 1
+  

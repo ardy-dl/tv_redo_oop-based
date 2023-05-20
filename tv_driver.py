@@ -11,9 +11,13 @@ my_tv = TV()
 # call the methods using the objects
 tv1.show()
 tv1.turn_on()
-tv1.get_channel()
+tv1.get_volume()
 my_tv.get_channel()
-tv1.set_channel(23)
+tv1.set_volume(7)
+tv1.channel_down()
+my_tv.volume_up()
+my_tv.show()
 tv1.show()
+
 
 # create UI designs
