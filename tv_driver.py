@@ -4,7 +4,6 @@ import tkinter as tk
 from tkinter import messagebox
 
 root = tk.Tk()
-root.withdraw()
 root.title("Test Driver (TV)")
 root.config(bd=15)
 text = tk.Text(root, width=40, height=10)
