@@ -21,8 +21,18 @@ my_tv = TV()
 
 
 # call the methods using the objects
-tv1.show(text)
+tv1.show(text)  
 tv2.show(text)
-tv1.status()
+my_tv.show(text)
+my_tv.turn_off()
+my_tv.status()
+my_tv.get_channel()
+my_tv.set_channel(122)
+my_tv.show(text)
+tv2.channel_up()
+tv2.show(text)
+tv1.volume_down()   
+tv1.show(text)
+
 
 root.mainloop()
