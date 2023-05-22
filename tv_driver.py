@@ -21,7 +21,7 @@ my_tv = TV()
 
 
 # call the methods using the objects
-tv1.show()
-tv2.show()
+tv1.show(text)
+tv2.show(text)
 
 root.mainloop()

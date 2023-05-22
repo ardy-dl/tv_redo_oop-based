@@ -1,9 +1,5 @@
 import tkinter as tk
 
-root = tk.Tk()
-root.title("Test Driver (TV)")
-text = tk.Text(root, width=40, height=10)
-text.pack()
 
 # create the class
 class TV:
@@ -14,8 +10,8 @@ class TV:
         self.volume = volume
         self.is_on = False
     # show the name of the object, channel and volume level
-    def show(self):
-        text.insert(tk.END, f"{self.name} - channel: {self.channel} | volume: {self.volume}\n")
+    def show(self, text_widget):
+        text_widget.insert(tk.END, f"{self.name} - channel: {self.channel} | volume: {self.volume}\n")
     # show the status of the object
     def status(self):
         print(self.name, "Status: ON" if self.is_on else "Status: OFF")
