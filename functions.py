@@ -1,3 +1,10 @@
+import tkinter as tk
+
+root = tk.Tk()
+root.title("Test Driver (TV)")
+text = tk.Text(root, width=40, height=10)
+text.pack()
+
 # create the class
 class TV:
     # initialize the class
@@ -8,7 +15,7 @@ class TV:
         self.is_on = False
     # show the name of the object, channel and volume level
     def show(self):
-        print (str(self.name) + " - " + "channel:" + str(self.channel) + " volume:" + str(self.volume))
+        text.insert(tk.END, f"{self.name} - channel: {self.channel} | volume: {self.volume}\n")
     # show the status of the object
     def status(self):
         print(self.name, "Status: ON" if self.is_on else "Status: OFF")
@@ -41,4 +48,4 @@ class TV:
     # decrease volume  
     def volume_down(self):
         self.volume -= 1
-  
+
