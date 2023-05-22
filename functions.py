@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import messagebox
 
 
 # create the class
@@ -14,7 +15,8 @@ class TV:
         text_widget.insert(tk.END, f"{self.name} - channel: {self.channel} | volume: {self.volume}\n")
     # show the status of the object
     def status(self):
-        print(self.name, "Status: ON" if self.is_on else "Status: OFF")
+        status = f"{self.name} Status: ON" if self.is_on else f"{self.name} Status: OFF"\
+        messagebox.showinfo("Status", status)
     def turn_on(self):
         self.is_on = True
         print(self.name, "is turned ON")
